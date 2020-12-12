@@ -1,0 +1,1 @@
+This project shows how to dynamically load plain or encoded JS code, from a CSS propriety value stored in an external stylesheet.
